@@ -4,56 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Portefolio</title>
 </head>
 
 <body>
-
-    <header>
-
-        <nav>
-            <div id="logo">Home</div>
+<!-- Debut Entete-->
+    <header class="header">
+        <div id="logo"><img src="assets/images/logo2.jpg" alt="Logo_ndkgroup"></div>
+        <nav class="navbar">
             <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#resumes">Resume</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#works">Work</a></li>
+                <li><a href="#abouts">About</a></li>
+                <li><a href="#presentations">Home</a></li>
             </ul>
         </nav>
-
-        <div>
-
-            <div>
-                <h2>Kone Ali</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, alias!</p>
-            </div>
-
-            <img src="/images/profile.jpg" alt="profile.jpg">
-
-        </div>
     </header>
+<!-- Fin Entete-->
 
-    <!-- about -->
-
-    <section>
+<!--Debut Première Partie-->
+    <div id="presentations" class="presentation">
         <div>
-            <h2>About</h2>
+            <h2>N'Guessan D'Zabbah</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, minus aliquid excepturi hic quia nesciunt et iusto dignissimos dolorem mollitia facere, culpa ratione debitis in deserunt aspernatur corrupti. Sunt tenetur consectetur adipisci expedita, accusantium quo laborum vel soluta magni. Quaerat blanditiis rerum neque accusantium reiciendis architecto nisi earum animi iure.</p>
+        </div>
+            <img src="assets/images/hommeb.jpg" alt="profile.jpg"> 
+    </div>
+<!--Fin Première Partie-->
+   
+<!--Debut Session About -->
+    <section id="abouts"   class="about">
+            <h2 class="titre">About</h2>
 
             <div>
-                <article>
+                <article class="article">
                     <h1>Parcours</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, fugiat aliquam veniam delectus
                         doloremque illo? Reprehenderit distinctio minus nam ad! Consequatur odit nostrum libero nam
                         dignissimos expedita inventore natus illum.</p>
                 </article>
-                <article>
+                <article class="article">
                     <h1>Compétence</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, fugiat aliquam veniam delectus
                         doloremque illo? Reprehenderit distinctio minus nam ad! Consequatur odit nostrum libero nam
                         dignissimos expedita inventore natus illum.</p>
                 </article>
-                <article>
-                    <h1>Langues</h1>
+                <article class="article">
+                    <h2>Langues</h1>
                     <table>
                         <thead>
                             <th>Langues</th>
@@ -72,14 +72,15 @@
                     </table>
                 </article>
             </div>
-        </div>
     </section>
 
-    <!-- Work -->
+     <!--Fin Session About -->
 
-    <section>
+    <!-- Début de la session Work -->
+
+    <section id="works" class="work">
         <div>
-            <h2>Work</h2>
+            <h2 class="titre">Work</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, repellat.</p>
         </div>
 
@@ -93,59 +94,65 @@
             </div>
         </article>
     </section>
+    <!-- Debut session resume -->
 
-    <!-- resume -->
-
-    <section>
+    <section id="resumes" class="resume">
         <div>
-            <h2>Consulter mon CV</h2>
+            <h2 class="titre">Consulter mon CV</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, repellat.</p>
         </div>
         <a href="" download>Télécharger</a>
     </section>
 
-    <!-- contact -->
-    <section>
-        <h2>contact</h2>
-
+    <!-- session contact -->
+<section id="contacts" class="contact">
+        <h2 class="titre">contact</h2>
         <article>
             <div>
-                <h1>Information personnelle</h1>
+                <h2 class="titre">Information personnelle</h2>
                 <small>Email: tst@gmail.com</small>
                 <small>Numéro: 0505050505</small>
                 <small>Site web : www.moncv.com</small>
-            </div>
-            <form >
-                <input type="email" placeholder="email">
-                <textarea cols="50" rows="5"></textarea>
+            </div >
+            <div class="container-form">
+            <form id="form">
+                <h3>Registre</h3>
+                <div class="input-control">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="email">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="fname">Votre description</label>
+                    <textarea cols="50" rows="5"></textarea>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="town">Town</label>
+                    <select id="town" name="town">
+                    <option value="plateau">Abidjan-Plateau</option>
+                    <option value="adjame">Abidjan-Adjamé</option>
+                    <option value="attecoube">Abidjan-Attécoubé</option></select>
+                </div>
                 <button type="submit">Envoyer</button>
             </form>
+            </div>
         </article>
-    </section>
+</section>
 
-    <footer>
+    <footer class="footer">
         <div>
-            <h2>Kone Ali</h2>
-            <p>Routrouver moi sur les reseaux.</p>
+            <h2>N'Guessan D'Zabbah</h2>
+            <p>Retrouver moi sur mes reseaux sociaux à travers les liens .</p>
         </div>
-        <ul>
-            <li>
-                <a href="#">
-                    <i>#</i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i>#</i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i>#</i>
-                </a>
-            </li>
-            
-        </ul>
+        <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </footer>
 
 </body>
